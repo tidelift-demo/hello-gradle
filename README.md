@@ -12,3 +12,12 @@ Or
 ```
 
 And Tidelift will be able to analyze the dependencies.
+
+
+## Project w/ subproject
+
+You may need to target specific desired subprojects to generate the dependency graph depending on the project structure. For example,
+
+```bash
+./gradlew server:dependencies -q > gradle-dependencies-q.txt
+```
